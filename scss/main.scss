@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quote-size {
+    font-size: 28px;
+}
+
+body {
+    background-color: $dark-blue;
+    height: 100vh;
+    padding: 10px;
+
+    font-family: $font-manrope;
+}
+
+blockquote::before, blockquote::after {
+    content: '"'
+}
+
+@import './card.scss';
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+
+    a {
+        color: #444;
+    }
+}
